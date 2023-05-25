@@ -1,21 +1,23 @@
 import * as React from 'react';
 import Header from '../Header'
 import Style from './layout.module.css'
+import Form from '../Form/Form'
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
 
 function Layout(props) {
- 
+ console.log("props",props)
 
   return (
     <div className={"d-flex flex-column h-100 scrollbar"}>
     <Header/>
-    <div className={[Style.mainLayout, "mt-auto"].join(" ")}>
+    <div >
       <div class={Style.header}>
+      <h5 className={Style.bordertitle}>Certificate Portal</h5>
       </div>
-      <h5 className={[Style.bordertitle, "mt-4"].join(" ")}>Certificate Portal</h5>
-
+      {props.page!="NoForm"?<Form />:<></>}
+      
   </div>
   </div>
   );
