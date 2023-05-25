@@ -1,0 +1,45 @@
+html,*{ margin:0; padding:0;}
+		
+body{color: #444; font-weight: 400; line-height: 150%; font-family:poppins,Arial,sans-serif; font-size: 14px; border-top: 5px solid #003D86; }
+.container-fluid{ max-width: 95%; margin: 0 auto;}
+
+/*Resetting Clay.css*/
+a:active, a:hover, .btn:focus, .btn.focus,.btn:active:focus   {outline:0 !important;  box-shadow:0 transparent !important; }   
+
+/******************************* Heading CSS Class *******************************/
+main{padding: 50px 0;}
+h1 {font-size: 1.7em; color: #000; font-weight: 600; margin-bottom: 5%; text-align: center;  text-decoration: underline;}	
+h5.bordertitle{font-size: 1.5em; font-weight: 600; color: #003D86; margin-bottom: 30px; padding-bottom: 5px; border-bottom: solid 3px #eee;	position: relative;  }
+h5.bordertitle::before {background-color: #9ED2FF;	content: ''; position: absolute; height: 6px; width: 150px;	max-width: 100%; top: auto;	bottom: -6px; left: 0; right: auto; }
+
+/******************************* Main Header *******************************/
+header.main_header{background: #FFFFFF; box-shadow: 0 8px 6px -6px rgba(0,0,0,.2); border-bottom: solid 1px #eee; padding: 10px 0; overflow:hidden;}
+.right_logo, .brand_logo img{ height: 90px; margin-left: 60px; margin-right: 60px;}
+.right_logo{ float: right;}
+
+/******************************* ACCORDION Section *******************************/
+.form_section .accordion-button{ background: #2169B2; color: #fff; font-weight: 500; line-height: 20px; border-radius: 0 !important;}
+.form_section .accordion-button:focus{ border-color: transparent; box-shadow: transparent !important;}
+.form_section .accordion-body{ border:solid 1px #d7ebff; border-top:0; background: #F1F8FF;}
+.form_section .accordion-body p, .form_section .accordion-body ul{ margin-bottom: 1px;}
+.form_section .accordion-flush .accordion-item{margin-bottom: 50px !important; color: #777; }
+.form_section h2.accordion-header{text-align: center; line-height: 2px; padding: 0px; font-weight: bold; margin-bottom: 0px; border:solid 1px #ddd; border-radius: 0 !important; }
+.form_section h2.accordion-header .accordion-button{ font-size: bold !important;}
+.form_section .accordion-item{ background: #fff; border:0 !important; line-height: 25px; margin: 20px 0;}
+.form_section .accordion-button:not(.collapsed)::after {content: "\f068";	font-family: "FontAwesome";	color: #fff; background-image: none;  }
+.form_section .accordion-button.collapsed::after {content: "\2b";	color: #fff; font-weight: 400;	font-family: "FontAwesome";	background-image: none; }
+
+/******************************* Footer Section *******************************/
+footer .copyright{ background:#000; padding:10px 0; text-align: center; font-size: 12px; color: #fff; bottom: 0; overflow:hidden; }
+
+
+/******************************* Responsive Section *******************************/
+@media (max-width:768px){
+    body{ font-size: 12px;}
+    .right_logo, .brand_logo img{ height: 70px; margin-top: 5px;}
+}
+
+@media (max-width:850px){
+    .right_logo, .brand_logo img{ height: 50px; margin-left: 10px; margin-right: 10px;}
+    .right_logo{ float: right;}
+}
